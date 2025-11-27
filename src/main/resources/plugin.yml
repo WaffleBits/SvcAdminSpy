@@ -1,0 +1,22 @@
+name: SvcAdminSpy
+main: com.example.svcspy.AdminSpyBukkitPlugin
+version: 1.0.2
+# Target older API for cross-compatibility with 1.20.x servers
+api-version: "1.20"
+author: WaffleBits
+depend: [ voicechat ]
+
+commands:
+  vcspy:
+    description: Toggle Simple Voice Chat admin spy mode
+    usage: /vcspy
+    permission: svcspy.use
+  vcbroadcast:
+    description: Toggle Simple Voice Chat admin broadcast mode
+    usage: /vcbroadcast
+    permission: svcspy.use
+
+permissions:
+  svcspy.use:
+    description: Allows toggling SVC admin spy mode
+    default: op
