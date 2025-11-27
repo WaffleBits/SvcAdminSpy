@@ -29,9 +29,3 @@ gradle clean build
 
 Output
 - Jar: `build/libs/SvcAdminSpy-1.0.2.jar`
-
-Releases
-- For Modrinth/Distributions: upload the built jar as a Release asset rather than committing large distribution files to the repo.
-
-Notes
-- Do not commit `gradle-*-bin.zip`, `build/` or heavy dependencies; use `.gitignore` and GitHub Releases or Git LFS for large assets.
